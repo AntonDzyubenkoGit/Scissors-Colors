@@ -1,3 +1,79 @@
+@font-face {
+  font-family: 'RobotoCondensed-Regular';
+  src: url('/fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+    url('/fonts/RobotoCondensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-Bold';
+  src: url('/fonts/RobotoCondensed-Bold.woff2') format('woff2'),
+    url('/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --light-bg-page-color: #f4f4f4; /* #f4f4f4 */
+  --light-bg-element-color: #ffffff;
+  --light-text-color: #000;
+  --light-title-color: #30017e;
+
+  --dark-bg-page-color: #3d3d3d;
+  --dark-bg-element-color: #494949;
+  --dark-text-color: #d2d2d2;
+  --dark-title-color: #a78bd6;
+
+  --font-regular: 'RobotoCondensed-Regular';
+  --font-bold: 'RobotoCondensed-Bold';
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
 body {
-  background-color: #111010;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 20px;
+  font-family: var(--font-regular);
+
+  color: var(--light-text-color);
+  background-color: var(--light-bg-page-color);
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 64px;
+  font-family: var(--font-bold);
+
+  color: var(--light-title-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+image {
+  vertical-align: top;
 }

@@ -1,10 +1,12 @@
+import { Fragment } from 'react';
 import './App.css';
+import Header from './components/Header/Header';
 
 function App() {
   return (
-    <div>
-      <p className="hello">Hello from Scissors & Colors!!!</p>
-    </div>
+    <Fragment>
+      <Header />
+    </Fragment>
   );
 }
 
