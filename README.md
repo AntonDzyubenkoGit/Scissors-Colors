@@ -1,2 +1,9 @@
-# Scissors-Colors
-Разработка react-приложения "Scissors&amp;Colors"
+# Scissors-Colors (React + Vite)
+
+Разработка react-приложения "Scissors&Colors"
+
+---
+
+### **Ссылка на сайт**
+
+### https://scolors.ru/
