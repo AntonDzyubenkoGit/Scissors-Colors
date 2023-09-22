@@ -7,8 +7,10 @@ const MainPage = ({ isDarkMode, toggleDarkMode }) => {
   return (
     <Fragment>
       <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <MainPicture />
-      <Services />
+      <main>
+        <MainPicture />
+        <Services isDarkMode={isDarkMode} />
+      </main>
     </Fragment>
   );
 };

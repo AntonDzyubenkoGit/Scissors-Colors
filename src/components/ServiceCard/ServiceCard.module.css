@@ -1,0 +1,44 @@
+.service__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--light-bg-element-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.service__card.dark {
+  background-color: var(--dark-bg-element-color);
+}
+
+.service__img {
+  transition: transform 0.3s ease 0s;
+}
+
+.service__name {
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: var(--font-bold);
+}
+
+.service__link {
+  align-self: end;
+  font-size: 14px;
+
+  margin-top: 20px;
+  margin-right: 15px;
+  padding-bottom: 20px;
+
+  transition: opacity 0.3s ease 0s;
+}
+
+@media (any-hover: hover) {
+  .service__img:hover {
+    transform: scale(1.1);
+  }
+
+  .service__link:hover {
+    opacity: 0.7;
+  }
+}
