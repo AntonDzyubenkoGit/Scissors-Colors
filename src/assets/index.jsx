@@ -12,6 +12,10 @@ import makeup from './services/makeup.png';
 import nail_service from './services/nail_service.png';
 import solarium from './services/solarium.png';
 import tattooing from './services/tattooing.png';
+import telegram_light from './social/telegram_light.svg';
+import telegram_dark from './social/telegram_dark.svg';
+import whatsapp_light from './social/whatsapp_light.svg';
+import whatsapp_dark from './social/whatsapp_dark.svg';
 
 export {
   logo_light,
@@ -28,4 +32,8 @@ export {
   nail_service,
   solarium,
   tattooing,
+  telegram_light,
+  telegram_dark,
+  whatsapp_light,
+  whatsapp_dark,
 };
