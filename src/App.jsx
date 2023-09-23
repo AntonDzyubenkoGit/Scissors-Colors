@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react';
 import './App.css';
 import MainPage from './pages/MainPage';
+import Header from './components/Header/Header';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -17,7 +18,8 @@ function App() {
 
   return (
     <Fragment>
-      <MainPage isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      <MainPage isDarkMode={isDarkMode} />
     </Fragment>
   );
 }

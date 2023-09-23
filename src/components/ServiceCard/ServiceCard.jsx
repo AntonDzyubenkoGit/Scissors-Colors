@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './ServiceCard.module.css';
 
 const ServiceCard = ({ image, serviceName, isDarkMode }) => {
-  console.log(image);
   return (
     <div className={isDarkMode ? styles.service__card : `${styles.service__card} ${styles.dark}`}>
       <div style={{ overflow: 'hidden' }}>

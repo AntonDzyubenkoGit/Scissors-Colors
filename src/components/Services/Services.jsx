@@ -3,8 +3,6 @@ import ServiceCard from '../ServiceCard/ServiceCard';
 import styles from './Services.module.css';
 import servicesData from '../../data/services';
 
-console.log(servicesData);
-
 const Services = ({ isDarkMode }) => {
   return (
     <div className={`${styles.services} container`}>
