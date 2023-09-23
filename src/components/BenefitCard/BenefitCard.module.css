@@ -1,0 +1,32 @@
+.benefit__card {
+  flex: 0 1 500px;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: var(--light-bg-element-color);
+}
+
+.benefit__card.dark {
+  background-color: var(--dark-bg-element-color);
+}
+
+.benefit__name {
+  font-size: 24px;
+  font-family: var(--font-bold);
+  text-align: center;
+
+  margin-top: 20px;
+}
+
+.benefit__text {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0 50px;
+  line-height: 150%;
+}
+
+@media (max-width: 992px) {
+  .benefit__text {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+}

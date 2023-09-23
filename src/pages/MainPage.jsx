@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import MainPicture from '../components/MainPicture/MainPicture';
 import Services from '../components/Services/Services';
+import Benefits from '../components/Benefits/Benefits';
 
 const MainPage = ({ isDarkMode }) => {
   return (
@@ -8,6 +9,7 @@ const MainPage = ({ isDarkMode }) => {
       <main>
         <MainPicture />
         <Services isDarkMode={isDarkMode} />
+        <Benefits isDarkMode={isDarkMode} />
       </main>
     </Fragment>
   );

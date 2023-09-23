@@ -1,0 +1,28 @@
+.benefit {
+  margin-top: 50px;
+}
+
+.benefit__cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  column-gap: 100px;
+  row-gap: 50px;
+
+  margin-top: 50px;
+  padding: 0 50px;
+}
+
+@media (max-width: 992px) {
+  .benefits {
+    margin-top: 25px;
+  }
+  .benefit__cards {
+    padding: 0 15px;
+
+    column-gap: 50px;
+    row-gap: 25px;
+  }
+}
