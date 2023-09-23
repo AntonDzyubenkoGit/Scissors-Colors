@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Contacts.module.css';
-// import { telegram_light } from '../../assets';
 import { telegram_light, telegram_dark, whatsapp_light, whatsapp_dark } from '../../assets';
 
 const Contacts = ({ isDarkMode }) => {
