@@ -126,6 +126,10 @@
   }
 }
 
+.link__active {
+  color: #3d9970;
+}
+
 @media (max-width: 1340px) {
   .header__links {
     column-gap: 50px;

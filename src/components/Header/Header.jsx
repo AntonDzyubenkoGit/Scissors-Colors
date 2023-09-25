@@ -1,28 +1,46 @@
 import React, { useState } from 'react';
 import styles from './Header.module.css';
 import { logo_light, logo_dark, moon, sun } from '../../assets';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = ({ isDarkMode, toggleDarkMode }) => {
   return (
     <header className={`${styles.header} container`}>
-      <a className={styles.header__logo} href="./">
+      <Link className={styles.header__logo} to="/">
         <img src={isDarkMode ? logo_light : logo_dark} alt="logo" />
-      </a>
+      </Link>
       <nav className={styles.header__menu}>
         <ul
           className={isDarkMode ? styles.header__links : `${styles.header__links} ${styles.dark}`}
         >
           <li className={styles.header__link}>
-            <a href="#">Главная</a>
+            <NavLink to="/" className={({ isActive }) => (isActive ? styles.link__active : '')}>
+              Главная
+            </NavLink>
           </li>
           <li className={styles.header__link}>
-            <a href="#">Наши услуги</a>
+            <NavLink
+              to="/services"
+              className={({ isActive }) => (isActive ? styles.link__active : '')}
+            >
+              Наши услуги
+            </NavLink>
           </li>
           <li className={styles.header__link}>
-            <a href="#">Мастера</a>
+            <NavLink
+              to="/staff"
+              className={({ isActive }) => (isActive ? styles.link__active : '')}
+            >
+              Мастера
+            </NavLink>
           </li>
           <li className={styles.header__link}>
-            <a href="#">отзывы</a>
+            <NavLink
+              to="/feedback"
+              className={({ isActive }) => (isActive ? styles.link__active : '')}
+            >
+              отзывы
+            </NavLink>
           </li>
           <li className={styles.header__switch}>
             <button
