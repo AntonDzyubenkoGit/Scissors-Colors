@@ -41,6 +41,7 @@
 html,
 body {
   width: 100%;
+
   font-size: 100%;
   line-height: 1;
   font-size: 20px;
@@ -115,4 +116,15 @@ img {
   h6 {
     font-size: 32px;
   }
+}
+
+#root {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }

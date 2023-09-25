@@ -9,6 +9,8 @@
       'logo banner';
 
     column-gap: 90px;
+
+    width: 100%;
   }
 }
 

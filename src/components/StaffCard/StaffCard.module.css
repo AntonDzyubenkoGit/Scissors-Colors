@@ -1,0 +1,43 @@
+.staff__card {
+  flex: 0 1 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--light-bg-element-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.staff__card.dark {
+  background-color: var(--dark-bg-element-color);
+}
+
+.staff__img {
+  transition: transform 0.3s ease 0s;
+}
+
+.staff__name {
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: var(--font-bold);
+
+  padding: 0 5px;
+}
+
+.staff__profession,
+.staff__experience {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.staff__experience {
+  padding-bottom: 28px;
+}
+
+@media (any-hover: hover) {
+  .staff__img:hover {
+    transform: scale(1.1);
+  }
+}
