@@ -1,12 +1,11 @@
 import React from 'react';
 import ServiceCard from '../ServiceCard/ServiceCard';
 import styles from './Services.module.css';
-import servicesData from '../../data/services';
 
-const Services = ({ isDarkMode }) => {
+const Services = ({ isDarkMode, servicesData, title, linkText }) => {
   return (
     <div className={`${styles.services} container`}>
-      <h1>Услуги нашего салона</h1>
+      <h1>{title}</h1>
       <div className={styles.services__cards}>
         {servicesData.map((service) => {
           return (
@@ -15,6 +14,7 @@ const Services = ({ isDarkMode }) => {
               image={service.image}
               serviceName={service.serviceName}
               isDarkMode={isDarkMode}
+              linkText={linkText}
             />
           );
         })}

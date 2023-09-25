@@ -10,20 +10,13 @@ import StaffPage from './pages/StaffPage';
 import ServicesPage from './pages/ServicesPage';
 import FeedbackPage from './pages/FeedbackPage';
 import HaircutPage from './pages/HaircutPage';
+import checkMode from './utils/checkMode';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    const checkMode = localStorage.getItem('scissor_mode');
-
-    if (checkMode === 'true') {
-      setIsDarkMode(false);
-      document.body.classList = 'dark';
-    } else {
-      setIsDarkMode(true);
-      document.body.classList = '';
-    }
+    checkMode(setIsDarkMode);
   }, []);
 
   function toggleDarkMode() {
