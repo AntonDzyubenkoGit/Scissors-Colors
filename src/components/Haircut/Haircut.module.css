@@ -1,0 +1,147 @@
+.haircut {
+  margin-top: 50px;
+  padding: 0 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.haircut__image {
+  max-width: 700px;
+  max-height: 700px;
+  margin-top: 50px;
+
+  overflow: hidden;
+}
+
+.haircut__image img {
+  object-fit: cover;
+  transition: transform 0.5s ease 0s;
+}
+
+.haircut__important {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  margin-top: 15px;
+}
+
+.haircut__cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+
+  column-gap: 100px;
+  row-gap: 50px;
+
+  margin-top: 25px;
+}
+
+.haircut__card {
+  flex: 1 1 50%;
+  max-width: 500px;
+  min-height: 400px;
+
+  background-color: var(--light-bg-element-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  padding: 20px 50px;
+
+  line-height: 150%;
+}
+
+.haircut__card.dark {
+  background-color: var(--dark-bg-element-color);
+}
+
+.haircut__item {
+  font-family: var(--font-bold);
+  text-align: center;
+  font-size: 24px;
+
+  margin-bottom: 20px;
+}
+
+.haircut__features {
+  margin-top: 25px;
+
+  max-width: 1100px;
+  padding: 20px 50px;
+
+  background-color: var(--light-bg-element-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.haircut__features.dark {
+  background-color: var(--dark-bg-element-color);
+}
+
+.features__list {
+  line-height: 150%;
+}
+
+.features__list > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (any-hover: hover) {
+  .haircut__image img:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 992px) {
+  .haircut {
+    margin-top: 25px;
+    padding: 0 15px;
+  }
+
+  .haircut__image {
+    margin-top: 25px;
+  }
+
+  .haircut__important {
+    gap: 15px;
+  }
+
+  .haircut__cards {
+    column-gap: 50px;
+    row-gap: 25px;
+  }
+
+  .haircut__card {
+    padding: 25px 15px;
+    font-size: 16px;
+    min-height: auto;
+  }
+
+  .haircut__item {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+  }
+
+  .haircut__features {
+    padding: 25px 15px;
+  }
+
+  .features__list {
+    font-size: 16px;
+  }
+
+  .features__list > li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .haircut__important {
+    font-size: 16px;
+  }
+}

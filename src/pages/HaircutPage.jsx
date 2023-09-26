@@ -1,24 +1,18 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { haircutWomenData, haircutManData } from '../data/detailService';
+import Haircut from '../components/Haircut/Haircut';
 
-const HaircutPage = () => {
+const HaircutPage = ({ isDarkMode }) => {
   const { link } = useParams();
 
   const haircutsData = [...haircutWomenData, ...haircutManData];
-  const haircut = haircutsData.filter((hair) => hair.link === link);
+  const haircutData = haircutsData.filter((hair) => hair.link === link);
+  const haircut = haircutData[0];
 
   return (
     <main>
-      <div>
-        {haircut.map((item) => {
-          return (
-            <div key={item.link} className="container">
-              {item.serviceName}
-            </div>
-          );
-        })}
-      </div>
+      <Haircut haircut={haircut} isDarkMode={isDarkMode} />
     </main>
   );
 };
