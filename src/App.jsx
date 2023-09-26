@@ -11,6 +11,7 @@ import ServicesPage from './pages/ServicesPage';
 import FeedbackPage from './pages/FeedbackPage';
 import HaircutPage from './pages/HaircutPage';
 import checkMode from './utils/checkMode';
+import UseScrollToTop from './utils/useScrollToTop';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <UseScrollToTop />
       <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Routes>
         <Route path="/" element={<MainPage isDarkMode={isDarkMode} />} />
