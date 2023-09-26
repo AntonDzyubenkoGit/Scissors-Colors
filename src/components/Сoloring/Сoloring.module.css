@@ -1,0 +1,26 @@
+.coloring {
+  margin-top: 50px;
+}
+
+.coloring__cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  row-gap: 25px;
+
+  margin-top: 50px;
+  padding: 0 25px;
+}
+
+@media (max-width: 992px) {
+  .coloring {
+    margin-top: 25px;
+  }
+
+  .coloring__cards {
+    margin-top: 25px;
+    padding: 0 15px;
+  }
+}

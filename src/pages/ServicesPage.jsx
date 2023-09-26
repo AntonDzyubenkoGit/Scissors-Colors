@@ -1,6 +1,13 @@
 import React from 'react';
 import Services from '../components/Services/Services';
-import { haircutWomenData, haircutManData } from '../data/detailService';
+import {
+  haircutWomenData,
+  haircutManData,
+  hairColoring,
+  makeup,
+  solariumService,
+} from '../data/detailService';
+import Сoloring from '../components/Сoloring/Сoloring';
 
 const ServicesPage = ({ isDarkMode }) => {
   return (
@@ -17,6 +24,9 @@ const ServicesPage = ({ isDarkMode }) => {
         title={'Мужские стрижки'}
         linkText={'всё о стрижке'}
       />
+      <Сoloring isDarkMode={isDarkMode} servicesData={hairColoring} title={'Окрашивание волос'} />
+      <Сoloring isDarkMode={isDarkMode} servicesData={makeup} title={'Макияж'} />
+      <Сoloring isDarkMode={isDarkMode} servicesData={solariumService} title={'Солярий'} />
     </main>
   );
 };

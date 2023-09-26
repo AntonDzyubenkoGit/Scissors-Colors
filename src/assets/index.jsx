@@ -78,6 +78,14 @@ import pompadour_big from './haircutMan/pompadour_big.png';
 import caesar from './haircutMan/caesar.png';
 import caesar_big from './haircutMan/caesar_big.png';
 
+import monochromeColoring from './hairColoring/monochromeColoring.png';
+import highlighting from './hairColoring/highlighting.png';
+import ombre from './hairColoring/ombre.png';
+
+import everydayMakeup from './makeup/everydayMakeup.png';
+import eveningMakeup from './makeup/eveningMakeup.png';
+import weddingMakeup from './makeup/weddingMakeup.png';
+
 export {
   logo_light,
   moon,
@@ -153,4 +161,10 @@ export {
   pompadour_big,
   caesar,
   caesar_big,
+  monochromeColoring,
+  highlighting,
+  ombre,
+  everydayMakeup,
+  eveningMakeup,
+  weddingMakeup,
 };
