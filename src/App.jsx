@@ -39,7 +39,11 @@ function App() {
         <Route path="/staff" element={<StaffPage isDarkMode={isDarkMode} />} />
         <Route path="/services" element={<ServicesPage isDarkMode={isDarkMode} />} />
         <Route path="/feedback" element={<FeedbackPage isDarkMode={isDarkMode} />} />
-        <Route path="/haircut/:id" element={<HaircutPage isDarkMode={isDarkMode} />} />
+        <Route
+          path="/haircut/:link"
+          element={<HaircutPage isDarkMode={isDarkMode} />}
+          exact={true}
+        />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
       <Footer isDarkMode={isDarkMode} />

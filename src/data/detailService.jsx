@@ -40,6 +40,7 @@ import {
 const haircutWomenData = [
   {
     id: 1,
+    link: 'cascade',
     serviceName: 'Каскад',
     price: 3000,
     time: 60,
@@ -60,6 +61,7 @@ const haircutWomenData = [
   },
   {
     id: 2,
+    link: 'caret',
     serviceName: 'Каре',
     price: 3000,
     time: 60,
@@ -71,6 +73,7 @@ const haircutWomenData = [
   },
   {
     id: 3,
+    link: 'long_care',
     serviceName: 'Длинное каре',
     price: 3000,
     time: 60,
@@ -82,6 +85,7 @@ const haircutWomenData = [
   },
   {
     id: 4,
+    link: 'asymmetry',
     serviceName: 'Асимметрия',
     price: 3000,
     time: 60,
@@ -93,6 +97,7 @@ const haircutWomenData = [
   },
   {
     id: 5,
+    link: 'ladder',
     serviceName: 'Лесенка',
     price: 3000,
     time: 60,
@@ -104,6 +109,7 @@ const haircutWomenData = [
   },
   {
     id: 6,
+    link: 'shag',
     serviceName: 'Шэг',
     price: 3000,
     time: 60,
@@ -115,6 +121,7 @@ const haircutWomenData = [
   },
   {
     id: 7,
+    link: 'bob',
     serviceName: 'Боб',
     price: 3000,
     time: 60,
@@ -126,6 +133,7 @@ const haircutWomenData = [
   },
   {
     id: 8,
+    link: 'debut',
     serviceName: 'Дебют',
     price: 3000,
     time: 60,
@@ -137,6 +145,7 @@ const haircutWomenData = [
   },
   {
     id: 9,
+    link: 'piksi',
     serviceName: 'Пикси',
     price: 3000,
     time: 60,
@@ -151,6 +160,7 @@ const haircutWomenData = [
 const haircutManData = [
   {
     id: 1,
+    link: 'box',
     serviceName: 'Бокс',
     price: 3000,
     time: 60,
@@ -162,6 +172,7 @@ const haircutManData = [
   },
   {
     id: 2,
+    link: 'demibox',
     serviceName: 'Полубокс',
     price: 3000,
     time: 60,
@@ -173,6 +184,7 @@ const haircutManData = [
   },
   {
     id: 3,
+    link: 'british',
     serviceName: 'Британка',
     price: 3000,
     time: 60,
@@ -184,6 +196,7 @@ const haircutManData = [
   },
   {
     id: 4,
+    link: 'grunge',
     serviceName: 'Гранж',
     price: 3000,
     time: 60,
@@ -195,6 +208,7 @@ const haircutManData = [
   },
   {
     id: 5,
+    link: 'canadian',
     serviceName: 'Канадка',
     price: 3000,
     time: 60,
@@ -206,6 +220,7 @@ const haircutManData = [
   },
   {
     id: 6,
+    link: 'undercard',
     serviceName: 'Андеркат',
     price: 3000,
     time: 60,
@@ -217,6 +232,7 @@ const haircutManData = [
   },
   {
     id: 7,
+    link: 'quiff',
     serviceName: 'Квифф',
     price: 3000,
     time: 60,
@@ -228,6 +244,7 @@ const haircutManData = [
   },
   {
     id: 8,
+    link: 'pompadour',
     serviceName: 'Помпадур',
     price: 3000,
     time: 60,
@@ -239,6 +256,7 @@ const haircutManData = [
   },
   {
     id: 9,
+    link: 'caesar',
     serviceName: 'Цезарь',
     price: 3000,
     time: 60,

@@ -14,6 +14,7 @@ const Services = ({ isDarkMode, servicesData, title, linkText }) => {
               image={service.image}
               serviceName={service.serviceName}
               isDarkMode={isDarkMode}
+              link={service.link}
               linkText={linkText}
             />
           );
