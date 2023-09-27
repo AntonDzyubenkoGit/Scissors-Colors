@@ -6,7 +6,7 @@ const FeedbackPage = ({ isDarkMode }) => {
   return (
     <main>
       <Feedback isDarkMode={isDarkMode} />
-      {/* <FeedbackForm isDarkMode={isDarkMode} /> */}
+      <FeedbackForm isDarkMode={isDarkMode} />
     </main>
   );
 };
